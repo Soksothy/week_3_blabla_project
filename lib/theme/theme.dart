@@ -46,13 +46,13 @@ class BlaColors {
 /// Definition of App text styles.
 ///
 class BlaTextStyles {
-  static TextStyle heading = const TextStyle(fontSize: 28, fontWeight: FontWeight.w500);
+  static TextStyle heading = TextStyle(fontSize: 28, fontWeight: FontWeight.w500);
 
-  static TextStyle body =  const TextStyle(fontSize: 16, fontWeight: FontWeight.w400);
+  static TextStyle body =  TextStyle(fontSize: 16, fontWeight: FontWeight.w400);
 
-  static TextStyle label =  const TextStyle(fontSize: 13, fontWeight: FontWeight.w400);
+  static TextStyle label =  TextStyle(fontSize: 13, fontWeight: FontWeight.w400);
 
-  static TextStyle button =  const TextStyle(fontSize: 14, fontWeight: FontWeight.w500);
+  static TextStyle button =  TextStyle(fontSize: 14, fontWeight: FontWeight.w500);
 }
 
 

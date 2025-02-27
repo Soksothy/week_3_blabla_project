@@ -35,19 +35,19 @@ class _RidePrefScreenState extends State<RidePrefScreen> {
     return Stack(
       children: [
         // 1 - Background  Image
-        const BlaBackground(),
+        BlaBackground(),
 
         // 2 - Foreground content
         Column(
           children: [
-            const SizedBox(height: 16),
+            SizedBox(height: 16),
             Text(
               "Your pick of rides at low price",
               style: BlaTextStyles.heading.copyWith(color: Colors.white),
             ),
-            const SizedBox(height: 100),
+            SizedBox(height: 100),
             Container(
-              margin: const EdgeInsets.symmetric(horizontal: BlaSpacings.xxl),
+              margin: EdgeInsets.symmetric(horizontal: BlaSpacings.xxl),
               decoration: BoxDecoration(
                 color: Colors.white, // White background
                 borderRadius: BorderRadius.circular(16), // Rounded corners
@@ -61,7 +61,7 @@ class _RidePrefScreenState extends State<RidePrefScreen> {
 
                   // 2.1 Display the Form to input the ride preferences
                   RidePrefForm(initRidePref: RidePrefService.currentRidePref,),
-                  const SizedBox(height: BlaSpacings.m),
+                  SizedBox(height: BlaSpacings.m),
 
 
 
@@ -72,10 +72,11 @@ class _RidePrefScreenState extends State<RidePrefScreen> {
                     height: 200, // Set a fixed height
                     child: ListView.builder(
                       shrinkWrap: true, // Fix ListView height issue
-                      physics: const AlwaysScrollableScrollPhysics(),
+                      physics: AlwaysScrollableScrollPhysics(),
                       itemCount: RidePrefService.ridePrefsHistory.length,
                       itemBuilder: (ctx, index) => RidePrefHistoryTile(
                         ridePref: RidePrefService.ridePrefsHistory[index],
+                        //Call back
                         onPressed: () => onRidePrefSelected(RidePrefService.ridePrefsHistory[index]),
                       ),
                     ),

@@ -8,6 +8,7 @@ import '../../../utils/date_time_util.dart';
 ///
 class RidePrefHistoryTile extends StatelessWidget {
   final RidePref ridePref;
+  //Callback to be called when the tile is tapped
   final VoidCallback? onPressed;
 
   const RidePrefHistoryTile({super.key, required this.ridePref, this.onPressed});

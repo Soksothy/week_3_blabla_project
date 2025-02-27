@@ -55,7 +55,7 @@ class _RidePrefFormState extends State<RidePrefForm> {
   // ----------------------------------
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [ 
