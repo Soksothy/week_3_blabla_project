@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'widgets/bla_button.dart';
+import '../../widgets/actions/bla_button.dart';
 import '../../theme/theme.dart';
 
 // Test screen to display all of BlaButton
