@@ -5,6 +5,7 @@ import '../../service/ride_prefs_service.dart';
 import '../../theme/theme.dart';
 import '../../utils/animations_util.dart';
 import '../ride/rides_screen.dart';
+import '../../utils/animations_util.dart';
 import 'widgets/ride_pref_form.dart';
 import 'widgets/ride_pref_history_tile.dart';
 
